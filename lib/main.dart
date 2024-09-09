@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'Page/splash_screen.dart';
 // Auth pages.
 import 'Auth/login_page.dart';
 import 'Auth/register_page.dart';
@@ -16,7 +17,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: const LoginPage(),
+      home: const SplashScreen(),
       routes: {
         '/login-page': (context) => const LoginPage(),
         '/register-page': (context) => const RegisterPage(),
